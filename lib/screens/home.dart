@@ -1,3 +1,5 @@
+import 'package:discord/components/sidebar.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -18,16 +20,16 @@ class _HomeState extends State<Home> {
     return Scaffold(
       key: scaffoldHomeKey,
       // endDrawer: ,
-      // drawer: const Sidebar(),
-      // drawerDragStartBehavior: DragStartBehavior.down,
-      // drawerEnableOpenDragGesture: true,
-      // drawerScrimColor: Colors.transparent,
-      // drawerEdgeDragWidth: MediaQuery.of(context).size.width,
+      drawer: const Sidebar(),
+      drawerDragStartBehavior: DragStartBehavior.down,
+      drawerEnableOpenDragGesture: true,
+      drawerScrimColor: Colors.transparent,
+      drawerEdgeDragWidth: MediaQuery.of(context).size.width,
       appBar: AppBar(
         leading: IconButton(
             icon: const Icon(Icons.menu),
             onPressed: () {
-              // scaffoldHomeKey.currentState?.openDrawer();
+              scaffoldHomeKey.currentState?.openDrawer();
             }),
         actions: const [
           Icon(Icons.phone_in_talk),

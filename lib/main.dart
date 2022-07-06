@@ -30,8 +30,8 @@ class MyApp extends StatelessWidget {
 
         listTileTheme: const ListTileThemeData(
           selectedColor: Color.fromRGBO(66, 70, 77, 1),
-          textColor: Color.fromRGBO(255, 229, 177, 1),
-          iconColor: Color.fromRGBO(255, 229, 177, 1),
+          textColor: Color.fromRGBO(185, 187, 190, 1),
+          iconColor: Color.fromRGBO(185, 187, 190, 1),
         ),
         // inputDecorationTheme: const InputDecorationTheme(
         //   fillColor: Color.fromRGBO(32, 34, 37, 1),
@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
         colorScheme: const ColorScheme(
           brightness: Brightness.dark,
           primary: Color.fromRGBO(46, 49, 54, 1),
-          onPrimary: Color.fromRGBO(255, 242, 190, 1),
+          onPrimary: Color.fromRGBO(185, 187, 190, 1),
           secondary: Color.fromRGBO(32, 34, 37, 1),
           onSecondary: Colors.white,
           error: Colors.red,
@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
           onSurface: Colors.white,
         ),
       ),
-      home: const Home(),
+      home: Home(),
     );
   }
 }
